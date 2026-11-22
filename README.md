@@ -37,8 +37,6 @@ Developed for **A261 STTHK3113 – Sensor-Based System, Assignment 2**.
 | Touch pin | Male pin | GPIO 27 (T7) |
 | All modules | VCC / GND | 3.3 V / GND (via breakout board V and G rails) |
 
-> All modules are powered at **3.3 V** because the ESP32 GPIO pins are not 5 V tolerant.
-
 ## Software Requirements
 
 - **Arduino IDE**

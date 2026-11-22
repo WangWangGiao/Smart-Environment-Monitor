@@ -17,7 +17,7 @@ Developed for **A261 STTHK3113 – Sensor-Based System, Assignment 2**.
 
 | Component | Model |
 |---|---|
-| Microcontroller | ESP32-WROOM-32 DevKit (30-pin) |
+| Microcontroller | ESP32 DevKit V1 (30-pin) |
 | Breakout board | Custom ESP32 breakout board (Assignment 1) |
 | Sensor 1 | DHT11 temperature and humidity sensor |
 | Sensor 2 | KY-037 sound sensor |
@@ -70,8 +70,8 @@ These settings are at the top of the code and can be adjusted:
 | Setting | Default | Purpose |
 |---|---|---|
 | `TOUCH_RATIO` | [0.7] | Touched when the reading drops below this ratio of the normal value. Higher = more sensitive |
-| `SOUND_THRESHOLD` | [40] | How much louder than the quiet level counts as "Sound Detected". Lower = more sensitive |
-| `SOUND_MAX` | [500] | How much louder than the quiet level counts as 100 % |
+| `SOUND_THRESHOLD` | [25] | How much louder than the quiet level counts as "Sound Detected". Lower = more sensitive |
+| `SOUND_MAX` | [400] | How much louder than the quiet level counts as 100 % |
 
 ## How to Use
 
@@ -79,9 +79,3 @@ These settings are at the top of the code and can be adjusted:
 2. **Page 1 – Environment** shows the temperature, humidity and status (Normal / Hot / Cold / Humid / Dry).
 3. Touch the pin to switch to **Page 2 – Sound Monitor**, which shows the sound level, a level bar and the sound status.
 4. Touch again to return to Page 1.
-
-> The sound level is a relative value compared with the quiet level measured at start-up. It is **not** a decibel (dB) measurement.
-
-## Author
-
-[Your Name] – [Matric Number]
